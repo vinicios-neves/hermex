@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand-color-primary-pure: #f29849;
+  --brand-color-primary-dark: #e28634;
+  --brand-color-secondary-pure: #1d2f40;
+  --brand-color-secondary-dark: #23384d;
+  --neutral-white: #ffffff;
+  --neutral-text: #444444;
+  --neutral-details: #e7e7e7;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-brand-primary-pure: var(--brand-color-primary-pure);
+  --color-brand-primary-dark: var(--brand-color-primary-dark);
+  --color-brand-secondary-pure: var(--brand-color-secondary-pure);
+  --color-brand-secondary-dark: var(--brand-color-secondary-dark);
+  --color-neutral-white: var(--neutral-white);
+  --color-neutral-text: var(--neutral-text);
+  --color-neutral-details: var(--neutral-details);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-body: var(--font-inter);
+  --font-heading: var(--font-exo2);
+
+  --shadow-elevation-2: 0px 0px 20px 0px rgba(132, 132, 132, 0.2);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), sans-serif;
+  color: var(--neutral-text);
+  background: var(--neutral-white);
 }

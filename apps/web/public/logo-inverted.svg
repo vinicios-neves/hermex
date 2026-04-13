@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60" fill="none">
+  <text x="8" y="32" font-family="'Exo 2', sans-serif" font-weight="700" font-size="28" fill="#ffffff">herme</text>
+  <text x="102" y="32" font-family="'Exo 2', sans-serif" font-weight="700" font-size="28" fill="#f29849">x</text>
+  <!-- Arrows -->
+  <path d="M115 12 L130 22 L115 32" stroke="#e28634" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M132 12 L147 22 L132 32" stroke="#e28634" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="52" y="50" font-family="Inter, sans-serif" font-weight="400" font-size="13" fill="#ffffff">locadora</text>
+</svg>

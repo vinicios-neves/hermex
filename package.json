@@ -11,7 +11,8 @@
     "db:down": "docker compose down",
     "db:migrate": "pnpm --filter @hermex/api exec prisma migrate dev",
     "db:studio": "pnpm --filter @hermex/api exec prisma studio",
-    "db:generate": "pnpm --filter @hermex/api exec prisma generate"
+    "db:generate": "pnpm --filter @hermex/api exec prisma generate",
+    "web:storybook": "pnpm --filter @hermex/web storybook"
   },
   "engines": {
     "node": ">=20",
