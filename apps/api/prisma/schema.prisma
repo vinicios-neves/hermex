@@ -1,0 +1,27 @@
+// This is your Prisma schema file
+// Learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider     = "prisma-client"
+  output       = "../src/generated/prisma"
+  moduleFormat = "cjs"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Vehicle {
+  id           String   @id @default(cuid())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  brand        String
+  model        String
+  year         Int
+  licensePlate String   @unique
+  dailyRate    Float
+  available    Boolean  @default(true)
+
+  @@map("vehicles")
+}

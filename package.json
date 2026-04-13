@@ -1,0 +1,20 @@
+{
+  "name": "hermex",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "web:dev": "pnpm --filter @hermex/web dev",
+    "api:dev": "pnpm --filter @hermex/api start:dev",
+    "api:build": "pnpm --filter @hermex/api build",
+    "web:build": "pnpm --filter @hermex/web build",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:migrate": "pnpm --filter @hermex/api exec prisma migrate dev",
+    "db:studio": "pnpm --filter @hermex/api exec prisma studio",
+    "db:generate": "pnpm --filter @hermex/api exec prisma generate"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}
