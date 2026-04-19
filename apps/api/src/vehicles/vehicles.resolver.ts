@@ -8,6 +8,8 @@ export class VehiclesResolver {
 
   @Query(() => [Vehicle], { name: 'vehicles' })
   async findAll(): Promise<Vehicle[]> {
-    return this.prisma.vehicle.findMany() as Promise<Vehicle[]>;
+    return this.prisma.vehicle.findMany({
+      include: { category: true },
+    }) as Promise<Vehicle[]>;
   }
 }

@@ -30,14 +30,23 @@ type Query {
   vehicles: [Vehicle!]!
 }
 
+enum Transmission {
+  AUTOMATIC
+  MANUAL
+}
+
 type Vehicle {
   available: Boolean!
   brand: String!
+  category: Category
+  categoryId: ID
   createdAt: DateTime!
   dailyRate: Float!
   id: ID!
+  imageUrl: String
   licensePlate: String!
   model: String!
+  transmission: Transmission
   updatedAt: DateTime!
   year: Int!
 }
