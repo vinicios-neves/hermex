@@ -5,6 +5,8 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { join } from 'path';
 import { PrismaModule } from './prisma/prisma.module';
 import { VehiclesModule } from './vehicles/vehicles.module';
+import { CategoriesModule } from './categories/categories.module';
+import { LocationsModule } from './locations/locations.module';
 
 @Module({
   imports: [
@@ -21,6 +23,8 @@ import { VehiclesModule } from './vehicles/vehicles.module';
 
     PrismaModule,
     VehiclesModule,
+    CategoriesModule,
+    LocationsModule,
   ],
 })
 export class AppModule {}

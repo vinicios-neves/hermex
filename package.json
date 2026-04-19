@@ -12,6 +12,7 @@
     "db:migrate": "pnpm --filter @hermex/api exec prisma migrate dev",
     "db:studio": "pnpm --filter @hermex/api exec prisma studio",
     "db:generate": "pnpm --filter @hermex/api exec prisma generate",
+    "db:seed": "pnpm --filter @hermex/api exec prisma db seed",
     "web:storybook": "pnpm --filter @hermex/web storybook"
   },
   "engines": {
