@@ -23,6 +23,12 @@ model Vehicle {
   dailyRate    Float
   available    Boolean  @default(true)
 
+  imageUrl     String?
+  transmission String?
+
+  categoryId   String?
+  category     Category? @relation(fields: [categoryId], references: [id])
+
   @@map("vehicles")
 }
 
@@ -32,6 +38,8 @@ model Category {
   updatedAt DateTime @updatedAt
 
   name      String   @unique
+
+  vehicles  Vehicle[]
 
   @@map("categories")
 }
